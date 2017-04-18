@@ -1,9 +1,8 @@
 # jsexer
 
-3. Create the HTML, CSS and JavaScript from the search page screenshot
-
 Please complete the following JavaScript questions using your normal development workflow.
 Document any research done to complete a question.
+
 1. Fix the below JavaScript code so that the correct index is printed to console.log on each iteration.
 (function() { 
   var index, 
@@ -14,14 +13,17 @@ Document any research done to complete a question.
     }, 100); 
   } 
 })();
+
 2. Modify the below JavaScript so that it is called just after the DOM has loaded. No legacy browser support required.
 (function() { 
   document.getElementById("test").innerHTML = "Hello World"; 
 })();
+
 3. Modify the below code so that it will only display a message if the user is using Internet Explorer 7.
 (function() { 
   alert("Hello World"); 
 })();
+
 4. Modify the below JavaScript code so that it uses a closure to return the response.
 (function() { 
   function hello(name, age) { 
@@ -29,6 +31,7 @@ Document any research done to complete a question.
   } 
   console.log(hello('John', 33)); 
 }();
+
 5. Finish the below JavaScript by implementing a simple flow control function (flow) that can take the provided array of functions and process them asynchronously before making a final callback.
 (function() { 
   var array = [ 
@@ -52,6 +55,7 @@ Document any research done to complete a question.
     console.log("all functions finished in " + (new Date().getTime() - timestamp) + "ms");
   }); 
 })();
+
 6. Modify the below code so that the return value can also be returned with a callback function (if a callback function has been specified).
 (function() { 
   function isArray(array) { 
@@ -64,6 +68,7 @@ Document any research done to complete a question.
   ]); 
   console.log("isArray: " + result); 
 })();
+
 7. Optimize the below JavaScript to minimize the number of redraws and reflows required.
 (function() { 
   var element, 
@@ -82,6 +87,7 @@ Document any research done to complete a question.
       element.style.color = data[index].color; 
     } 
 })();
+
 8. Using the below JavaScript code as a starting point, implement a chain-able DOM Wrapper API that operates in a similar fashion to jQuery’s API (No native prototype extensions).
 (function() { 
   NodeList.prototype.show = function() { 
@@ -99,6 +105,7 @@ Document any research done to complete a question.
   document.querySelectorAll("#test").show(); 
   document.querySelectorAll("#test").hide(); 
 })();
+
 9. The below JavaScript is used to handle mousemove events amongst 3 divs which are nested inside each other. Find and fix the problem which is causing too many events to get fired.
 (function() { 
   var boxes = [ 
