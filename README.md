@@ -4,6 +4,7 @@ Please complete the following JavaScript questions using your normal development
 Document any research done to complete a question.
 
 1. Fix the below JavaScript code so that the correct index is printed to console.log on each iteration.
+
 (function() { 
   var index, 
       length = 10; 
@@ -15,16 +16,19 @@ Document any research done to complete a question.
 })();
 
 2. Modify the below JavaScript so that it is called just after the DOM has loaded. No legacy browser support required.
+
 (function() { 
   document.getElementById("test").innerHTML = "Hello World"; 
 })();
 
 3. Modify the below code so that it will only display a message if the user is using Internet Explorer 7.
+
 (function() { 
   alert("Hello World"); 
 })();
 
 4. Modify the below JavaScript code so that it uses a closure to return the response.
+
 (function() { 
   function hello(name, age) { 
     return name + ", who is " + age + " years old, says hi!"); 
@@ -33,6 +37,7 @@ Document any research done to complete a question.
 }();
 
 5. Finish the below JavaScript by implementing a simple flow control function (flow) that can take the provided array of functions and process them asynchronously before making a final callback.
+
 (function() { 
   var array = [ 
     function(callback) { 
@@ -57,6 +62,7 @@ Document any research done to complete a question.
 })();
 
 6. Modify the below code so that the return value can also be returned with a callback function (if a callback function has been specified).
+
 (function() { 
   function isArray(array) { 
     return typeof(array) === "object" && (array instanceof Array); 
@@ -70,6 +76,7 @@ Document any research done to complete a question.
 })();
 
 7. Optimize the below JavaScript to minimize the number of redraws and reflows required.
+
 (function() { 
   var element, 
       index, 
@@ -89,6 +96,7 @@ Document any research done to complete a question.
 })();
 
 8. Using the below JavaScript code as a starting point, implement a chain-able DOM Wrapper API that operates in a similar fashion to jQuery’s API (No native prototype extensions).
+
 (function() { 
   NodeList.prototype.show = function() { 
     var array = Array.prototype.slice.call(this, 0); 
@@ -107,6 +115,7 @@ Document any research done to complete a question.
 })();
 
 9. The below JavaScript is used to handle mousemove events amongst 3 divs which are nested inside each other. Find and fix the problem which is causing too many events to get fired.
+
 (function() { 
   var boxes = [ 
     document.getElementById("box1"), 
